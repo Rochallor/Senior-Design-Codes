@@ -1,12 +1,22 @@
 #==============================================================================
-# Simple Move
-# Written by Khira Morgan
-
-# This function will implement a simple move and return the updated baord
-# Functions: simple_move
-# Input: oldboard = 2d list of old board position
-# blank_square = 1d list with two elements
-# diddo for occ_square
+# File Name: 	test_simple_move
+# Author: 	   Khira Morgan
+# Project:	   Senior Design Fall 2017
+# 
+# Description: This script serves to test the separate code "simple_move" by
+#              passing the inputs oldboard, new_blank, and new_occupied into
+#              the simple move function, getting the output "newboard" back, 
+#              and finally printing the old and new boards for comparison.
+# Definitions: 
+# 	       i.   row1, row2, row3, row4, row5, row6, row7, and row8 are defined
+#              as each row in a standard chess board complete with piece/space
+#              designations.
+# 	       ii.  Uppercase Letters are the Black Pieces
+#              Lowercase Letters are the White Pieces
+# 	       iii. r & R = Rook        k & K = King
+#              n & N = Knight      p & P = Pawn
+#              b & B - Bishop      s = Space
+#              q & Q = Queen
 #==============================================================================
 
 import simple_move
@@ -47,11 +57,13 @@ def print_board(board):
     for i in range(0,len(board)):
         print(board[len(board)-i-1]);
 
+print("Previous Board:")
 print_board(oldboard);
 
 newboard = simple_move.simple_move(oldboard, new_blank, new_occupied);
 
 print("");
 print("Move Made: " + str(new_blank[0]) + str(new_blank[1]) + ' to ' + str(new_occupied[0]) + str(new_occupied[1]))
-print("");    
+print("");
+print("Updated Board:")    
 print_board(newboard);
