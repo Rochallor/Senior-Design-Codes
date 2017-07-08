@@ -7,10 +7,10 @@
 #		         positions from the old board positions, and return the updated 
 #              board.
 # Inputs: 
-# 	       i.   oldboard = 2D list of old board positions
-# 	       ii.  new_blank is a 1D list with two elements designating the square
+# 	      i.    oldboard = 2D list of old board positions
+# 	      ii.   new_blank is a 1D list with two elements designating the square
 #		         that the piece was moved from -- occupied->space
-# 	       iii. new_occupied is a 1D list with two elements designating the 
+# 	      iii.  new_occupied is a 1D list with two elements designating the 
 #              square that the piece was moved to -- space->occupied
 #==============================================================================
 
