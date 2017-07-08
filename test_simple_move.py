@@ -32,15 +32,6 @@ row8 = ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'];
 
 oldboard = [row1, row2, row3, row4, row5, row6, row7, row8];
 
-a = 0;
-b = 1;
-c = 2;
-d = 3;
-e = 4;
-f = 5;
-g = 6;
-h = 7;
-
 row1 = 0;
 row2 = 1;
 row3 = 2;
@@ -49,6 +40,15 @@ row5 = 4;
 row6 = 5;
 row7 = 6;
 row8 = 7;
+
+a = 0;
+b = 1;
+c = 2;
+d = 3;
+e = 4;
+f = 5;
+g = 6;
+h = 7;
 
 new_blank = [1,1]
 new_occupied = [2,2]
